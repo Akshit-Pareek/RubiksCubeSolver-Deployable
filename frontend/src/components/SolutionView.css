@@ -1,0 +1,20 @@
+.solution-card {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #020617, #020617);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  color: white;
+}
+
+.cube-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cube-container > div {
+  width: 260px !important;
+  height: 260px !important;
+}

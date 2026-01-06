@@ -1,0 +1,30 @@
+.scanner-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.scan-btn, .confirm-btn {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.scan-btn {
+  background: #1abc9c;
+  color: #000;
+}
+
+.confirm-btn {
+  background: #f39c12;
+  color: #000;
+}
