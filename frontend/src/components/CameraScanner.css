@@ -28,3 +28,27 @@
   background: #f39c12;
   color: #000;
 }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  pointer-events: none;
+  width:75%;
+  justify-self: center;
+}
+
+.grid-cell {
+  border: 2px solid rgba(0, 255, 0, 0.6);
+}
