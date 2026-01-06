@@ -16,3 +16,4 @@ export async function solveCube(cubeString) {
   });
   return res.json();
 }
+const API = "https://rubikscubesolver-deployable.onrender.com";
