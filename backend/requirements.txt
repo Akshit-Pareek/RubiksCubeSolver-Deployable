@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+kociemba
+opencv-python
