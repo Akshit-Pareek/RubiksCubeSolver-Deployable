@@ -154,7 +154,7 @@ function App() {
     </p>
 
     <div className="App">
-      <div style={{ marginBottom: "20px" ,display:"flex",gap:"10px"}}>
+      <div className="main-layout" style={{ marginBottom: "20px"}}>
       {/* {!solution && ( */}
         <CameraScanner
           face={faceOrder[currentFaceIndex]}
