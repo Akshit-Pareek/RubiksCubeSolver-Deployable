@@ -20,10 +20,10 @@ app.add_middleware(
 class SolveRequest(BaseModel):
     cube_string: str
 
-@app.post("/scan-face")
-def scan_face():
-    colors = scan_one_face()
-    return {"colors": colors}
+# @app.post("/scan-face")
+# def scan_face():
+#     colors = scan_one_face()
+#     return {"colors": colors}
 
 @app.post("/solve")
 def solve(req: SolveRequest):
