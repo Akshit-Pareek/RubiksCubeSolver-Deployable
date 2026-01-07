@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from cube_scanner.scanner import scan_one_face
+# from cube_scanner.scanner import scan_one_face
 from cube_solver import solve_cube
 
 app = FastAPI()
