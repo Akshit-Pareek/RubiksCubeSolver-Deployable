@@ -50,7 +50,7 @@ function App() {
 
   const [currentStep, setCurrentStep] = useState(0);
   const moves = solution ? solution.split(" ") : [];
-  const [speed, setSpeed] = useState(1); // 1 = normal speed
+  // const [speed, setSpeed] = useState(1); // 1 = normal speed
   const [simulatorFaces, setSimulatorFaces] = useState(null);
   
   const handleScanResult = (colors) => {
