@@ -198,7 +198,7 @@ function App() {
                 cubeString={buildCubeString(simulatorFaces)}
                 step={currentStep}
                 moves={moves}
-                speed={speed}
+                // speed={speed}
                 facelets={facelets}
                 />
             </>
