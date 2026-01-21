@@ -1,24 +1,22 @@
 import { useEffect } from "react";
 
-const CubeViewer = ({ cubeString, step, moves, speed,facelets }) => {
+const CubeViewer = ({ facelets, moves }) => {
   useEffect(() => {
-    if (typeof window.AnimCube3 !== "function" || !cubeString) return;
+    if (typeof window.AnimCube3 !== "function" || !facelets) return;
 
-    const moveString = moves.join("");
+    const moveString = moves.join(" ");
+
     const params = [
-
       "id=animcube",
       `facelets=${facelets}`,
       `move=${encodeURIComponent(moveString)}`,
-      "size=300",          // 🔥 must match CSS
-      `speed=${speed * 5}`,
+      "size=300",
       "inline=1",
       "buttonbar=1",
-      "edit=1",
+      "edit=0",
       "hint=0",
       "bgcolor=0f172a",
-    //   "colorscheme=wygbor",
-      "buttonheight=25"
+      "buttonheight=25",
     ].join("&");
 
     requestAnimationFrame(() => {
@@ -28,20 +26,9 @@ const CubeViewer = ({ cubeString, step, moves, speed,facelets }) => {
       });
     });
   }, [facelets, moves]);
-  // [cubeString, step, moves, speed]);
 
-//   console.log(
-// cubeString.slice(0, 9),    // U
-// cubeString.slice(9, 18),   // R
-// cubeString.slice(18, 27),  // F
-// cubeString.slice(27, 36),  // D
-// cubeString.slice(36, 45),  // L
-// cubeString.slice(45, 54),  // B
-// );
   return (
     <div className="cube-container">
-      {/* 🔥 THIS div MUST be square */}
-
       <div
         id="animcube"
         style={{
