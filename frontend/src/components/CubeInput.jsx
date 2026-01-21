@@ -1,16 +1,17 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+import React from "react";
 import "./CubeInput.css";
 
-const colors = ["white", "red", "green", "yellow", "orange", "blue"];
+// const colors = ["white", "red", "green", "yellow", "orange", "blue"];
 
-const faceDefaults = {
-  U: Array(9).fill("white"),
-  R: Array(9).fill("red"),
-  F: Array(9).fill("green"),
-  D: Array(9).fill("yellow"),
-  L: Array(9).fill("orange"),
-  B: Array(9).fill("blue")
-};
+// const faceDefaults = {
+//   U: Array(9).fill("white"),
+//   R: Array(9).fill("red"),
+//   F: Array(9).fill("green"),
+//   D: Array(9).fill("yellow"),
+//   L: Array(9).fill("orange"),
+//   B: Array(9).fill("blue")
+// };
 const CubeInput = ({ faces, setFaces, onSolve }) => {
     const cycleColor = (face, index) => {
     const colors = ["white", "red", "green", "yellow", "orange", "blue"];
