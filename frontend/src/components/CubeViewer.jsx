@@ -27,16 +27,17 @@ const CubeViewer = ({ cubeString, step, moves, speed,facelets }) => {
         window.dispatchEvent(new Event("resize"));
       });
     });
-  }, [cubeString, step, moves, speed]);
+  }, [facelets, moves]);
+  // [cubeString, step, moves, speed]);
 
-  console.log(
-cubeString.slice(0, 9),    // U
-cubeString.slice(9, 18),   // R
-cubeString.slice(18, 27),  // F
-cubeString.slice(27, 36),  // D
-cubeString.slice(36, 45),  // L
-cubeString.slice(45, 54),  // B
-);
+//   console.log(
+// cubeString.slice(0, 9),    // U
+// cubeString.slice(9, 18),   // R
+// cubeString.slice(18, 27),  // F
+// cubeString.slice(27, 36),  // D
+// cubeString.slice(36, 45),  // L
+// cubeString.slice(45, 54),  // B
+// );
   return (
     <div className="cube-container">
       {/* 🔥 THIS div MUST be square */}
