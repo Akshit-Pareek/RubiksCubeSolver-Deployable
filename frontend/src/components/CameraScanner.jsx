@@ -29,10 +29,10 @@ const CameraScanner = ({ face, onScan, onConfirm, colors }) => {
     const formData = new FormData();
     formData.append("file", blob, "frame.jpg");
 
-    const res = await fetch("http://127.0.0.1:8000/scan-face", {
-      method: "POST",
-      body: formData
-    });
+    // const res = await fetch("http://127.0.0.1:8000/scan-face", {
+    //   method: "POST",
+    //   body: formData
+    // });
 
     const data = await res.json();
     onScan(data);
